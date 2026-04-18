@@ -168,6 +168,7 @@ export function createTasksArena(deps) {
               type: "info",
             });
             await new Promise((r) => setTimeout(r, delayConfig.battle));
+            await new Promise((r) => setTimeout(r, 1000));
           } catch (e) {
             addLog({
               time: new Date().toLocaleTimeString(),
@@ -794,6 +795,7 @@ export function createTasksArena(deps) {
 
             safetyCounter++;
             await new Promise((r) => setTimeout(r, delayConfig.refresh));
+            await new Promise((r) => setTimeout(r, 1000));
           }
 
           const updatedResult = await tokenStore.sendMessageWithPromise(
