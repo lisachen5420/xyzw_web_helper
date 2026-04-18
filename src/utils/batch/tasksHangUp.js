@@ -82,7 +82,7 @@ export function createTasksHangUp(deps) {
             { isSkipShareCard: true, type: 2 },
             5000,
           );
-          await new Promise((r) => setTimeout(r, 500));
+          await new Promise((r) => setTimeout(r, 1500));
         }
 
         tokenStatus.value[tokenId] = "completed";
@@ -153,7 +153,7 @@ export function createTasksHangUp(deps) {
             { isSkipShareCard: true, type: 2 },
             5000,
           );
-          await new Promise((r) => setTimeout(r, 500));
+          await new Promise((r) => setTimeout(r, 1500));
         }
         tokenStatus.value[tokenId] = "completed";
         addLog({
@@ -271,7 +271,7 @@ export function createTasksHangUp(deps) {
             break;
           }
 
-          await new Promise((r) => setTimeout(r, 1000));
+          await new Promise((r) => setTimeout(r, 2000));
           maxWait--;
         }
 
